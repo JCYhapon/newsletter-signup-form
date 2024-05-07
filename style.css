@@ -1,5 +1,5 @@
 @font-face {
-    font-family: myFont;
+    font-family: MyFont;
     src: url(/assets/fonts/Roboto-Regular.ttf);
 }
 
@@ -10,11 +10,97 @@
 }
 
 body {
-    font: myFont;
+    font-family: MyFont;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+    min-height: 100vh;   
 }
 
-.left {
 
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    align-items: center;
+}
+
+.left { 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.left ul {
+    font-size: 16px;
+}
+
+.left h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.274);
+    outline: none;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 0.274);
+    outline: none;
+    background-color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    margin-top: 15px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right img {
+    width: 100%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
